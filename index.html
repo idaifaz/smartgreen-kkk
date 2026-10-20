@@ -1,4 +1,5 @@
 <title>SmartGreen KKK</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800&family=Figtree:wght@400;500;600&family=Caveat:wght@600&display=swap">
@@ -136,7 +137,7 @@ aside{display:flex;flex-direction:column;gap:18px}
 .search input{flex:1;min-width:0;padding:12px 14px;border:1px solid var(--line);border-radius:10px;font:inherit;background:var(--surface);color:var(--ink)}
 .search button{width:48px;border:0;border-radius:10px;background:var(--green-deep);color:var(--surface);cursor:pointer;display:grid;place-items:center}
 .ann{list-style:none;margin:0;padding:6px 14px;background:var(--surface);border-radius:12px}
-.ann li{padding:11px 0}
+.ann li{padding:11px 0;min-width:0;overflow-wrap:anywhere}
 .ann li+li{border-top:1px solid var(--line)}
 .ann .date{display:block}
 .ann b{font-weight:600;font-size:14px}
@@ -327,6 +328,23 @@ footer.foot{padding-block:18px;font-size:13px;color:var(--muted);text-align:cent
 .org-list details.ob summary{padding:12px 14px;font-weight:700;color:var(--green,#1f6b35);cursor:pointer}
 .org-list details.ob .or{border:0;border-top:1px solid var(--line);border-radius:0}
 @media(max-width:700px){.org-list{display:block}.org button.chart{display:none}.org .sub .zh{display:none}}
+
+/* mobile polish */
+html,body{overflow-x:hidden}
+.panel,aside>*,.home-main>*{min-width:0}
+@media(max-width:760px){
+  .chip{min-height:44px}
+  .search input{font-size:16px;min-height:46px}
+  .menu a{padding-block:12px}
+  .btn{min-height:46px}
+  .about{padding-block:36px}.about h2,.gal h2,.org h2{font-size:26px}
+  .about .grid4{grid-template-columns:1fr 1fr;gap:10px}
+  .about .tc{padding:14px}
+  .gal-grid{gap:8px}.gal-grid span{font-size:11px;padding:18px 8px 6px}
+  .org-list details.ob summary{padding:14px}
+  .link,.card .more{display:inline-block;padding-block:8px}
+}
+@media(max-width:360px){.about .grid4{grid-template-columns:1fr}}
 </style>
 
 <header class="nav">
