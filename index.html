@@ -278,6 +278,18 @@ footer.foot{padding-block:18px;font-size:13px;color:var(--muted);text-align:cent
   .tools input{max-width:none}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+.about{padding-block:56px}
+.about h2{font-family:var(--f-display);font-size:30px;margin:0 0 12px}
+.about .lead{max-width:760px;color:var(--ink-2,inherit);line-height:1.7;margin:0 0 28px}
+.about .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:28px}
+.about .tc{background:var(--card,var(--bg));border:1px solid var(--line,rgba(0,0,0,.12));border-radius:14px;padding:18px}
+.about .tc b{display:block;margin-bottom:6px;color:var(--green,#1f6b35)}
+.about .tc p{margin:0;font-size:14px;line-height:1.55;opacity:.85}
+.about .ach{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.about h3{margin:28px 0 12px;font-size:18px}
+@media(max-width:900px){.about .grid4{grid-template-columns:repeat(2,1fr)}.about .ach{grid-template-columns:1fr}}
+@media(max-width:520px){.about .grid4{grid-template-columns:1fr}}
 </style>
 
 <header class="nav">
@@ -387,6 +399,19 @@ footer.foot{padding-block:18px;font-size:13px;color:var(--muted);text-align:cent
 
 <section class="stats wrap" aria-label="Pencapaian">
   <ul id="stats"></ul>
+</section>
+
+<section class="about wrap" id="mengenai" aria-label="Mengenai SmartGreen">
+  <h2>Mengenai SmartGreen</h2>
+  <p class="lead">SmartGreen PolyCC ialah inisiatif strategik Jabatan Pendidikan Politeknik dan Kolej Komuniti (JPPKK) untuk menjadikan institusi TVET di Malaysia kampus yang mampan dan mesra alam. Ia digerakkan melalui Blueprint SmartGreen PolyCC (BSGPC), dokumen rujukan utama untuk membudayakan kelestarian dalam kalangan warga politeknik dan kolej komuniti. Di Kolej Komuniti Kuantan, SmartGreen KKK melaksanakan blueprint ini melalui kempen, latihan, lawatan dan projek kelestarian kampus.</p>
+  <h3>Rasional Blueprint</h3>
+  <div class="grid4">
+    <div class="tc"><b>Peneraju Halatuju Strategik</b><p>Rujukan dan panduan kepada semua politeknik dan kolej komuniti dalam pengurusan mampan.</p></div>
+    <div class="tc"><b>Standard &amp; Pengiktirafan</b><p>Memantap sasaran projek mampan ke arah pengiktirafan Kampus Mampan.</p></div>
+    <div class="tc"><b>Inovasi Berimpak</b><p>Meningkatkan inovasi dan kreativiti pembangunan mampan yang memberi impak ekonomi, sosial dan persekitaran.</p></div>
+    <div class="tc"><b>Kolaborasi &amp; Inklusiviti</b><p>Memperkukuh jalinan dengan pihak berkepentingan, masyarakat dan industri, termasuk golongan kurang upaya.</p></div>
+  </div>
+  <p class="lead" style="margin-bottom:0">Maklumat lanjut: <a href="https://www.smartgreenpolycc.com" target="_blank" rel="noopener">www.smartgreenpolycc.com</a></p>
 </section>
 </div>
 
